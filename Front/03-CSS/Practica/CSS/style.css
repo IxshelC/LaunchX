@@ -1,0 +1,845 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: "barra";
+    src: url(../FONTS/Cardium-Font/cardiuma-regular.otf);
+}
+
+/* body{
+    background-image: url(../IMG/Fondo2.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+} */
+
+
+/** BARRA DE NAVEGACIÓN **/
+
+/* Contenedor de la barra de navegacion */
+header nav.barraNavegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Contenedor del logo */
+.barraNavegacion .logo{
+    margin-left: 96px;
+}
+
+/* LOGO*/
+.barraNavegacion .logo img{
+    width: 160px;
+    margin: -9px 28px;
+}
+
+/* Configuración de los contenedores ".dataBase ".links"*/
+.barraNavegacion .dataBase, .links li, a{
+    list-style:none; /* Quita el item */
+    text-decoration: none; /* Quita el subrayado de la etiqueta "a" */
+    display: inline-block; /* Coloca las listas en linea */
+    color:#63728c; /* Color de los links */
+    font-family: 'barra';   /* Tipo de fuente */
+    font-size: 16px;
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px #63728c;
+    letter-spacing: 1px;
+
+}
+
+/* Contenedor LINKS */
+.barraNavegacion .Links{
+    display: flex;
+    align-items: center;
+}
+
+/* Contenedor .dataBase etiqueta a*/
+.dataBase a{
+    padding: 0;
+    margin-right: 45px;
+}
+
+/*Contenedor .links */
+.links{
+    padding: 0%;
+    background-color: #e1f0ff;
+    padding: 35px 0 35px;
+    box-shadow: -6px 0px 11px 0px #e1f0ff;
+}
+
+/* Contenedor links etiqueta a*/
+.links li a{
+    color:#63728c; /* Fondo de barra de links */
+    margin: 0 47px 0 0; /* margen de separación a la dererecha */
+}
+
+/*Boton azul */
+.links li#botonAzul{
+    margin-right:45px;
+}
+.links li#botonAzul a{
+    background-color: #2a4ac7;
+    border-radius: 5px;
+    color: #e7f2fc;
+    padding: 13px 23px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    /* box-shadow: 0px 4px 7px 0px #6a81c5e8; */
+}
+/* Efecto hover del botón azul de la barra de navegación */
+li#botonAzul a:hover{
+    box-shadow: 0px 4px 7px 0px #6a81c5e8;
+}
+/** MAIN **/
+
+.seccion1{
+    display: flex;
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family:'Avenir';
+    src: url(../FONTS/Avenir/Avenir-LT-Std-95-Black_5179.ttf);
+}
+
+/** SECCIÓN INFO COMPLETA **/
+
+.info .infoCompleta{
+    padding: 80px 130px 130px;
+}
+
+/* Título */
+.infoCompleta #titulo{
+    color: #132a51;
+    font-family:'Avenir';
+    font-size: 68px;
+    font-weight: bolder;
+    margin-bottom:30px ;
+}
+
+
+@font-face {
+    font-family: 'Genera';
+    src: url(../FONTS/Genera/Wahyu\ and\ Sani\ Co.\ -\ Genera\ Alt\ Light.ttf);
+}
+/* Información de abajo del título */
+.infoCompleta p{
+    color: #707e96;
+    font-family: 'Genera';
+    font-weight: bolder;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    text-shadow: 0px 0px 1px #707e96;
+
+
+}
+
+
+/* Foto de la enfermera */
+#fotoEnfermera img{
+    width: 643px;
+}
+
+
+/** BOTONES **/
+
+/* Contenedor de botones con iconos */
+.botones{
+    margin:43px 12px 1px;
+    display: flex;
+}
+
+/* Información abajo del título */
+.botones p{
+    color: #13336a;
+    font-size: 15px;
+    margin-right: 38px;
+
+}
+/* Iconos */
+.botones #icon{
+    color: #ffd012;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+/*** BOTON RELOJ **/
+
+/* Fuente del reloj */
+@font-face {
+    font-family: 'Habanera';
+    src: url(../FONTS/Habanera/HabaneraRounded-SemiBold.ttf);
+}
+
+/* Boton arriba del flotante */
+.infoCompleta .boton p{
+    margin-top: 35%;
+    color: #1a4487;
+    font-size: 18px;
+    font-family: 'Habanera';
+}
+/* Ícono del reloj */
+.boton i{
+    background-color: rgb(241, 250, 250);
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 12px;
+}
+/* Efecto Hover del ícono del reloj */
+.boton i:hover{
+    box-shadow: 0px 3px 5px 0px #ccd2d9;
+}
+
+/** SECCIÓN FLOTANTE  **/
+
+/* Contenedor de los divs */
+.infoCompleta .flotante{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    background-color: #fcfcfce3;
+    margin: 25px;
+    padding: 30px;
+    /* box-shadow: 0px 3px 5px 0px #ccd2d9; */
+}
+
+/* Efecto Hover para Sección flotante */
+.infoCompleta .flotante:hover{
+    /* box-shadow: 2px 18px 20px 0px #d8e6f5; */
+    box-shadow: 1px 20px 20px 0px #52708f59;
+}
+
+/* Margen entre los div */
+.flotante div{
+    margin: 0 20px;
+}
+
+/* Info de los íconos de abajo */
+.flotante p#info{
+    color: #1a4487;
+    font-family: 'Habanera';
+    margin-left: 35px;
+
+}
+
+/* Iconos */
+.flotante i{
+    background-color: rgba(207, 224, 240, 0.611);
+    margin-right: 10px;
+    color:#1a54b1;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Efecto Hover de los iconos "Location" , "Date", "Vaccine",etc */
+.flotante i:hover{
+    box-shadow: 0px 3px 5px 0px #ccd2d9;
+}
+
+/* Botón azul */
+.flotante .flotanteBoton{
+    background-color: #2a4ac7;
+    border-radius: 5px;
+    padding: 10px 43px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    /* box-shadow: 0px 4px 7px 0px #6a81c5e8; */
+}
+
+/* Efecto Hover del botón azul del flotante */
+.flotante .flotanteBoton:hover{
+    box-shadow: 0px 4px 7px 0px #6a81c5e8;
+}
+
+/* Color de letra del botón */
+.flotante .flotanteBoton p{
+    color: white;
+}
+
+/** SECCION DE LOGOS  **/
+
+.seccion2{
+    margin: 80px 130px 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion2 img#lAstra{
+    opacity: 0.3;
+    padding-bottom: 20px;
+    width: 300px;
+}
+.seccion2 img#lSino{
+    width: 180px;
+    opacity: 0.1;
+    width: 200px;
+    padding-top: 10px;
+}
+.seccion2 img#lPfi{
+    width: 180px;
+    opacity: 0.1;
+    width: 200px;
+}
+.seccion2 img#lModer{
+    width: 230px;
+    opacity: 0.2;
+    padding-top:10px;
+}
+
+/** SECCION DE TITULO Y CARDS */
+
+.seccion3{
+    display: flex;
+    flex-direction: column;
+    margin:80px 130px 150px
+}
+
+/* Título de la seccion 3 */
+.seccion3 .info h2{
+    font-family: 'Avenir';
+    color: #132a51;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+/* Información abajo del título */
+.seccion3 .info p{
+    color: #707e96;
+    font-family: 'Genera';
+    font-weight: bolder;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #707e96;
+    line-height: 32px;
+}
+
+/** CARDS */
+
+.seccion3 .cards{
+    margin: 43px 0 0 ;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cards div{
+    width: 258px;
+    height: 330px;
+    border: 2px solid rgba(233, 233, 235, 0.516);
+    /* border: 2px solid rgba(193, 193, 193, 0.961); */
+    border-radius: 5%;
+    display: grid;
+    /* padding: 25px; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Efecto Hover de las cartas */
+.cards div:hover{
+    box-shadow:1px 17px 20px 0px #93c1f570;
+}
+
+
+/* Título de la primera carta */
+div h3{
+    color: #132a51;
+    text-shadow:0px 1px 1px #131820;
+    font-weight: bolder;
+    font-family:'Genera';
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+
+}
+
+/* Información de la primera carta  SLIDER*/
+div p{
+    color: #707e96;
+    text-shadow: 0px 0px 1px #707e96de;
+    font-family: 'Genera';
+    font-weight: bolder;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+/* Logo slider */
+.cards div img{
+    width: 60px;
+    padding: 12px;
+    margin-top: 10px;
+    background-color:rgb(231 241 241);
+    border-radius:9px ;
+
+}
+
+/** SECCION 4 **/
+
+.seccion4{
+    display: flex;
+}
+
+
+/* Imagen de enfermera */
+.seccion4 .enfermera2 img{
+    width: 643px;
+    margin: 130px 34px 0 0;
+}
+
+
+/*  Sección de info */
+.seccion4 .info4{
+    display: flex;
+
+}
+
+
+
+/* div de titulo e información */
+.seccion4 .info4 #titulo4{
+
+    padding: 20px;
+}
+
+
+/* Título */
+.info4 #titulo4 h2{
+    color: #132a51;
+    font-family:'Avenir';
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom:30px ;
+}
+
+/* Info abajo del título */
+#titulo4 p{
+
+    font-weight: bolder;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #707e96;
+    line-height: 32px;
+}
+
+/** BOTONES  DE SECCION4 **/
+
+#botones4{
+    display: flex;
+    justify-items: start;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* boton 1 */
+#botones4 #btn1 , #btn3 , #btn4, #btn5{
+    border: 2px solid rgba(198, 198, 198, 0.133);
+    border-radius: 10px;
+    display: flex;
+    padding: 15px 35px 15px 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Efecto Hover */
+#btn1:hover, #btn2:hover , #btn3:hover, #btn4:hover, #btn5:hover{
+    box-shadow:0px 12px 20px #93c1f533;
+}
+
+/* Icono1 */
+#btn1 img{
+    width: 28px;
+    background-color: rgba(207, 224, 240, 0.611);
+    padding: 6px 6px;
+    border-radius: 7px;
+
+}
+
+/* Info de ícono */
+#btn1 p{
+    color: #1a4487;
+    font-size: 18px;
+    text-shadow: 0px 1px 1px #131820;
+    letter-spacing: 2px;
+    margin: 0 85px 0 15px;
+}
+/* Icono de flecha */
+#btn1 i{
+    font-size: 14px;
+    background-color: rgba(207, 224, 240, 0.611);
+    padding: 2px 5px;
+    border-radius: 5px;
+    color:#1a54b1;
+}
+
+/* Botón 2 */
+
+#btn2{
+    border: 2px solid rgba(198, 198, 198, 0.126);
+    border-radius: 10px;
+    padding: 15px 35px 15px 20px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de Titulo */
+#btn2 #btn2_1{
+    display: flex;
+    align-items: center;
+}
+
+/* Ícono de la equis */
+#btn2 i#i1{
+    background-color: rgba(207, 224, 240, 0.611);
+    font-size:16px;
+    color: #0020A0;
+    padding: 7px 8px;
+    border-radius: 7px;
+}
+
+/* Título */
+#btn2 p#p1{
+    color: #1a4487;
+    font-size: 18px;
+    text-shadow: 0px 1px 1px #131820;
+    letter-spacing: 2px;
+    margin: 0 232px 0 15px;
+}
+
+/* Ícono de la flehca abajo*/
+i#i2{
+    background-color: rgba(207, 224, 240, 0.611);
+    font-size: 14px;
+    color: #4e5368;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+/* Info */
+#btn2 #p2{
+    font-size: 12px;
+    line-height: 19px;
+    text-shadow: 0px 0px 1px #c7c7c7c7;
+    margin: 10px 44px 9px;
+    letter-spacing: 0;
+}
+
+/* Boton 3 */
+
+#btn3 p{
+    color: #1a4487;
+    font-size: 18px;
+    text-shadow: 0px 1px 1px #131820;
+    letter-spacing: 2px;
+    margin: 0 189px 0 15px;
+}
+
+/* Icono de flecha */
+#btn3 i{
+    font-size: 14px;
+    background-color: rgba(207, 224, 240, 0.611);
+    padding: 2px 5px;
+    border-radius: 5px;
+    color:#1a54b1;
+}
+
+#btn3 i#i1{
+    background-color: rgba(207, 224, 240, 0.611);
+    font-size:16px;
+    color: #0020A0;
+    padding: 7px 8px;
+    border-radius: 7px;
+}
+
+/* Boton 4 */
+
+#btn4 p{
+    color: #1a4487;
+    font-size: 18px;
+    text-shadow: 0px 1px 1px #131820;
+    letter-spacing: 2px;
+    margin: 0 179px 0 15px;
+}
+
+#btn4 i{
+    font-size: 14px;
+    background-color: rgba(207, 224, 240, 0.611);
+    padding: 2px 5px;
+    border-radius: 5px;
+    color:#1a54b1;
+}
+
+#btn4 i#i1{
+    background-color: rgba(207, 224, 240, 0.611);
+    font-size:16px;
+    color: #0020A0;
+    padding: 7px 8px;
+    border-radius: 7px;
+}
+
+/* boton 5 */
+
+#btn5 p{
+    color: #1a4487;
+    font-size: 18px;
+    text-shadow: 0px 1px 1px #131820;
+    letter-spacing: 2px;
+    margin: 0 70px 0 15px;
+}
+
+#btn5 i{
+    font-size: 14px;
+    background-color: rgba(207, 224, 240, 0.611);
+    padding: 2px 5px;
+    border-radius: 5px;
+    color:#1a54b1;
+}
+
+#btn5 i#i1{
+    background-color: rgba(207, 224, 240, 0.611);
+    font-size:16px;
+    color: #0020A0;
+    padding: 7px 8px;
+    border-radius: 7px;
+}
+
+
+/** SECCION ENFERMERO **/
+
+.seccion5{
+    display: flex;
+    margin: 130px 0 34px 0;
+}
+
+/* Sección de la información del Enfermero*/
+.seccion5 .enfermero{
+    margin: 80px 52px 150px 91px;
+}
+/* Título de la sección del enfermero */
+.seccion5 .enfermero h2{
+    font-family: 'Avenir';
+    color: #1e427e;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+/* Párrafo del enfermero */
+.enfermero p{
+    color: #707e96;
+    font-family: 'Genera';
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #707e96;
+    line-height: 32px;
+}
+
+/* Sección del enfermero IMAGEN*/
+.seccion5 .imagenEnfermero img{
+    margin:130px 0 0 34px ;
+    width: 643px;
+}
+
+/** CARDS ENFERMERO **/
+
+.seccion5 .cardsEnfermero{
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Cards */
+.cardsEnfermero #Call ,#Chat, #Video, #Mes{
+    border: 2px solid rgba(140, 138, 138, 0.146);    /* Borde de las cards*/
+    border-radius: 5%;  /* Radio de las cards*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+    padding: 37px 25px ;
+}
+
+/* Efecto Hover en las cards */
+.cardsEnfermero  #Call:hover ,#Chat:hover, #Video:hover, #Mes:hover{
+    box-shadow: 1px 20px 20px 0px #52708f59;
+}
+
+/* Div que contiene el ícono, títlo "h3" y el "p" */
+.cardsEnfermero #call1{
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Ícono*/
+.cardsEnfermero i{
+    background-color: rgba(207, 224, 240, 0.611);
+    padding: 12px;
+    border-radius: 7px;
+    color: #1a54b1;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Título h3 */
+.cardsEnfermero h3{
+    color: #1a4487;
+    font-size: 19px;
+}
+
+/* Párrafo */
+.cardsEnfermero p{
+    font-size: 11px;
+    letter-spacing: 0;
+}
+
+/* BOTONES */
+/* Botón de Call */
+#Call button{
+    color:#1a54b1;
+    background-color: rgba(207, 224, 240, 0.611) ;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 47px;
+    font-size: 18px;
+    font-family: 'Habanera';
+    font-weight: bold;
+    margin-top: 32px;
+}
+
+/* Botón de Chat */
+#Chat button{
+    color:#ffffff;
+    background-color: #2a4ac7 ;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 47px;
+    font-size: 18px;
+    font-family: 'Habanera';
+    font-weight: lighter;
+    margin-top: 32px;
+}
+
+/*Efecto Hover de los botones */
+.cardsEnfermero button:hover{
+    box-shadow:  inset 1px 0px 20px 0px #597e8594;
+}
+.cardsEnfermero #Chat button:hover{
+    box-shadow:   1px 0px 20px 0px #4e5354c9;
+}
+
+
+/* Botón de Video  */
+#Video button{
+    color:#1a54b1;
+    background-color: rgba(207, 224, 240, 0.611) ;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 17px;
+    font-size: 19px;
+    font-family: 'Habanera';
+    font-weight: bold;
+    margin-top: 32px;
+}
+
+/* Botón de message */
+#Mes button{
+    color:#1a54b1;
+    background-color: rgba(207, 224, 240, 0.611) ;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 25px;
+    font-size: 19px;
+    font-family: 'Habanera';
+    font-weight: bold;
+    margin-top: 32px;
+}
+
+
+/** FOOTER */
+
+footer{
+    background-color:rgba(207, 224, 240, 0.611);
+    padding:44px 52px 0 91px;
+}
+
+.footer1{
+    display: flex;
+    justify-content: space-between
+}
+
+
+.footer1 .logoFooter{
+    margin-right: 200px;
+}
+/* Color de logo */
+.footer1 .logoFooter h3{
+    color: #2a4ac7;
+    letter-spacing: 1px;
+    font-size: 32px;
+    font-family: 'Avenir';
+    /* font-weight: bolder; */
+    /* text-shadow: 0px 0px 1px #040d1c; */
+}
+
+/* Párrafo bajo del logo */
+.footer1 .logoFooter p{
+    color: #707e96;
+    font-family: 'Genera';
+    font-weight: bolder;
+    font-size: 15px;
+    letter-spacing: 1px;
+    /* text-shadow: 0px 0px 1px #707e96; */
+    line-height: 32px;
+    margin-top: 15px;
+
+}
+
+/* Estilo de las listas */
+.footer1 ul{
+    list-style: none;
+}
+.footer1 li{
+    margin-top: 28px;
+    color: #707e96;
+    font-size: 14px;
+    font-family: 'Genera';
+    font-weight: bolder;
+/*     text-shadow: 0px 0px 1px #707e96; */
+}
+
+.footer1 h5{
+    font-family: 'Avenir';
+    color: #1e427e;
+    font-size: 25px;
+}
+
+footer .derechos{
+    padding: 95px 0 30px;
+    display: flex;
+    color: #707e96;
+    justify-content: space-between;
+
+}
+
+.derechos p{
+    font-family: 'Genera';
+    font-weight: bolder;
+    /* text-shadow: 0px 0px 1px #707e96; */
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.derechos #p1{
+    margin-right: 500px;
+}

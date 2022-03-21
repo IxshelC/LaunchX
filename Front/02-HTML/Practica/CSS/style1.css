@@ -1,0 +1,429 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: C, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    /* background-image: url(../IMG/FondoPastel2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed; */
+
+    background-image: url(../IMG/Fondo1.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+}
+
+/** FUENTES ¨**/
+
+
+@font-face {
+    font-family: C;
+    src: url(../FONTS/CaviarDreams.ttf);
+
+}
+
+@font-face {
+    font-family: D;
+    src: url(../FONTS/Vintage_fair.ttf);
+}
+
+@font-face {
+    font-family: E;
+    src: url(../FONTS/Retrophilia.ttf);
+
+}
+
+
+/** HEADER **/
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-image: url(../IMG/Pastel.jpg);
+
+
+}
+
+/** NAV BARRA DE NAVEGACIÓN **/
+nav.barraNavegacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+/** DIV LOGO DEL PASTEL **/
+
+div.logo {
+    text-align: center;
+    position: relative;
+
+}
+
+/* Logo del pastel */
+#logo {
+    width: 15%;
+    /* Tamaño del logo del pastel*/
+}
+
+/** DIV BARRA DE MENÚ **/
+div.barraMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    box-shadow: 3px 4px 12px 1px #1d1716;
+}
+
+/* Links de barraMenu */
+div.barraMenu a {
+    color: rgb(123, 32, 32);
+    font-size: 25px;
+    padding: 15px;
+    text-decoration: none;
+    font-family: E;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*Efecto Hover de los links de barra de menú */
+div.barraMenu a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 0px 18px rgb(224, 235, 253);
+}
+
+/** DIV ICONOS **/
+.barraMenu div.iconos {
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* Imagenes de los Links de iconos*/
+.barraMenu div.iconos a>img {
+    width: 30px;
+
+}
+
+/** TITULO **/
+h1{
+    margin-top: 50px;
+    text-align: center;
+    color: #a92378;
+    text-shadow: 2px 2px rgb(255, 0, 195);
+}
+
+/** FORMULARIO DE PEDIDOS */
+
+main section.pedido{
+    font-size: 30px;
+    width: 90%;
+    margin: 20px;
+}
+.pedido form fieldset{
+    padding: 20px;
+}
+
+
+/** PASTELES */
+.containerP{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+/* carta de pastel */
+.containerP .cardP{
+    width: 200px;
+    height: 250px;
+    border-radius: 8px;
+    border-radius: 8px;
+    box-shadow:  6px 4px 15px 6px rgb(67 55 55 / 51%);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-image: linear-gradient(to top, #d76363 0%, #fef9d7 100%);
+
+}
+
+/* Efecto Hover en la carta */
+.containerP .cardP:hover{
+    transform: translateY(-15px);
+    box-shadow:  6px 4px 15px 6px rgba(208, 237, 237, 0.934);
+}
+
+/* Tamaño de la imagen dentro del contenedor */
+.containerP .cardP img{
+    width: 80%;
+}
+
+/* Título del pastel */
+.containerP .cardP h4{
+    margin: 5px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #481421;
+}
+
+.containerP .cardP input{
+    width: 20px;
+    height: 20px;
+}
+/** CREA TU PASTEL **/
+
+#titulo{
+    text-align: center;
+    margin: 20px;
+    color: #ba11dc;
+}
+
+#nombrePastel{
+    font-size: 20px;
+}
+/** PANES **/
+.containerPan{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+/* carta de pan */
+.containerPan .cardPan{
+    width: 200px;
+    height: 150px;
+    border-radius: 106px;
+    box-shadow:  6px 4px 15px 6px rgb(67 55 55 / 51%);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-image: linear-gradient(to top, #9a7c57 0%, #fef9d7 100%);
+}
+
+/* color de la carta de pan */
+.containerPan .cardPan#chocolate{
+    background-image: linear-gradient(#cbb6b1 0%, #7e3c2b 100%);
+}
+
+.containerPan .cardPan#fresa{
+    background-image: linear-gradient(#e298e6 0%, #de7abe 100%);
+}
+
+.containerPan .cardPan#vainilla{
+    background-image: linear-gradient(#fdffee 0%, #c5da3e 100%);
+}
+
+/* Efecto Hover en la carta */
+.containerPan .cardPan:hover{
+    transform: translateY(-15px);
+    box-shadow:  6px 4px 15px 6px rgba(208, 237, 237, 0.934);
+}
+
+
+/* Título del pastel */
+.containerPan .cardPan h4{
+    margin: 15px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #09aaa2;
+}
+
+/* Información del pan */
+.containerPan .cardPan p{
+    font-size: 15px;
+    margin: 10px;
+}
+
+.containerPan .cardPan input{
+    width: 20px;
+    height: 20px;
+}
+
+/** SABORES **/
+
+.containerSabores{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+/* carta de sabores */
+.containerSabores .cardSabores{
+    width: 160px;
+    height: 160px;
+    border-radius: 106px;
+    box-shadow:  6px 4px 15px 6px rgb(67 55 55 / 51%);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-image: linear-gradient(to top, #578e9a 0%, #fef9d7 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* Efecto Hover en la carta */
+.containerSabores .cardSabores:hover{
+    transform: translateY(-15px);
+    box-shadow:  6px 4px 15px 6px rgba(208, 237, 237, 0.934);
+}
+
+
+/* Título del pastel */
+.containerSabores .cardSabores h4{
+    font-weight: 600;
+    font-size: 18px;
+    color: #ba11dc;
+}
+
+
+.containerSabores .cardSabores input{
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/** ADORNOS **/
+
+.containerAdornos{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+/* carta de adornos */
+.containerAdornos .cardAdornos{
+    width: 160px;
+    height: 160px;
+    border-radius: 106px;
+    box-shadow:  6px 4px 15px 6px rgb(67 55 55 / 51%);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-image: linear-gradient(to top, #430860b5 0%, #fef9d7 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* Efecto Hover en la carta */
+.containerAdornos .cardAdornos:hover{
+    transform: translateY(-15px);
+    box-shadow:  6px 4px 15px 6px rgba(208, 237, 237, 0.934);
+}
+
+
+/* Título de los adornos*/
+.containerAdornos  .cardAdornos  h4{
+    font-weight: 600;
+    font-size: 18px;
+    color: #ba11dc;
+}
+
+/* Información del los adornos */
+.containerAdornos  p{
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.containerAdornos  .cardAdornos input{
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/**
+
+
+/** FORMULARIO DIRECCIÓN **/
+
+/* Seccion del formulario */
+main section.direccion{
+    font-size: 30px;
+    width: 90%;
+    margin: 20px;
+}
+
+/* Marco del formulario */
+.direccion form fieldset{
+    padding: 20px;
+}
+
+/* Margen del los label */
+.direccion form fieldset label{
+    margin-left:20px ;
+}
+
+/* Tamaño de los inputs */
+.direccion input{
+    font-size: 20px;
+}
+
+/* Tamaño de los inputs de numeros de la dirección */
+.direccion input#numExterior,#numInterior{
+    width: 50px;
+}
+
+
+/** DIV DE BOTONES */
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.botones input{
+    color: #09aaa2;
+    font-weight: bolder;
+    background-color: #32093f;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/** FOOTER **/
+
+footer {
+    position: relative;
+}
+
+footer .footerdiv{
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+}
+
+.footerdiv p{
+    color: #0e455c;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
