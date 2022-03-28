@@ -1,0 +1,676 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../IMG/1008904.png);
+    background-size: 100%;
+}
+
+header .logo {
+    text-align: center;
+}
+
+main {
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cara1 {
+    width: 400px;
+    height: 573px;
+    border: 3px solid black;
+    background-color: rgb(255, 0, 60);
+    margin: 20px 0 20px 20px;
+    border-radius: 26px 0 0 68px;
+    box-shadow: -6px 5px 1px 0px #4f1414;
+}
+
+.circulos {
+    display: flex;
+    margin: 10px 3px 29px -1px;
+}
+
+.circulosCaja {
+    display: flex;
+    padding: 0 31px 0 0;
+    border-radius: 3px 3px 75px 4px;
+    box-shadow: 0px 6px 0px 0px #0000006b;
+}
+
+
+
+.circulosCaja #cAzul {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    /* border: 13px solid rgb(255, 255, 255); */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+#cAzul #cAzul1{
+    width: 80px;
+    height: 80px;
+    background-color: #0083ff;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: inset -3px -8px 14px 0px #000000b5;
+}
+
+
+
+.circulos .contenedorBlanco {
+    width: 132px;
+    height: 58px;
+    box-shadow: 0px 5px 0px 0px #0000005e;
+}
+
+.circulosCaja #cRojo {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(128, 31, 31);
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px 5px 0 0;
+}
+
+.circulosCaja #cAmarillo {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(251, 255, 0);
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px 5px 0 0;
+}
+
+.circulosCaja #cVerde {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0, 255, 51);
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px 5px 0 0;
+
+}
+
+
+
+.circulosCaja #cRojo:hover {
+    box-shadow: inset 2px -1px 8px rgb(39, 8, 4);
+}
+
+.circulosCaja #cAmarillo:hover {
+    box-shadow: inset 2px -1px 8px rgb(126, 128, 0);
+}
+
+.circulosCaja #cVerde:hover {
+    box-shadow: inset 2px -1px 8px green;
+}
+
+.cara1 .pokemon {
+    width: 320px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 0 0 0 37px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.pokemon #btns {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#btns #btnsRojos {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: red;
+    margin: 20px;
+}
+
+#btns #btnsRojos:hover {
+    box-shadow: inset 2px -1px 8px rgb(40, 40, 30);
+}
+
+.pokemon #screen {
+    width: 250px;
+    height: 220px;
+    background-color: rgb(41, 40, 40);
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: inset 4px 4px 3px 2px rgb(14 14 14);
+}
+
+.pokemon #screen:hover {
+    box-shadow: inset 0px 1px 8px 5px rgb(14 14 14);
+}
+
+#screenImg {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#screenImg #imagen {
+    width: 50%;
+    filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
+}
+
+#screenImg #idPokemon{
+    position: relative;
+    top: -29px;
+    left: 87px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* #screen #nombrePokemon{
+    color:wheat;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#screen #screenInfo{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 8px 0 0;
+
+}
+
+#screenInfo p{
+    color: white;
+} */
+
+.pokemon #btns2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0 0 0;
+
+}
+
+#btns2 #btn2Rojo {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+#btns2 #btn2Rojo:hover {
+    box-shadow: inset 2px -1px 8px rgb(38, 38, 24);
+}
+
+#btns2 i {
+    color: gray;
+}
+
+
+.cara1 .busqueda {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7px 0px 0px 0px;
+}
+
+
+.busqueda #busquedaNombre input {
+    font-size: 20px;
+    width: 120px;
+    background-color: #9ee8a8;
+    color: black;
+    box-shadow: inset 2px 3px 0px 1px rgb(19, 77, 55);
+    padding: 3px;
+
+
+}
+
+.busqueda #btnsDobles {
+    display: flex;
+    flex-direction: column;
+}
+
+#btnsDobles #doblesAzul {
+    width: 50px;
+    height: 10px;
+    background-color: rgb(46, 144, 255);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 2px 3px 0px 1px rgb(29, 26, 68);
+
+}
+
+#btnsDobles #doblesAzul:hover {
+    box-shadow: inset 2px 3px 0px 1px rgb(19, 25, 77);
+}
+
+#doblesAzul #puntoBlanco {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 5px;
+    border: .5px solid black;
+    margin-right: 5px;
+}
+
+
+#btnsDobles #doblesRojo {
+    width: 50px;
+    height: 10px;
+    background-color: rgb(184, 8, 8);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 2px 3px 0px 1px rgb(68, 29, 26);
+    margin: 19px 0 0;
+}
+
+#btnsDobles #doblesRojo:hover {
+    box-shadow: inset 2px 3px 0px 1px rgb(77, 77, 19);
+}
+
+#doblesRojo #puntoNegro {
+    width: 6px;
+    height: 6px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: .5px solid rgb(84, 84, 84);
+    margin-right: 5px;
+}
+
+
+/* DIVISION */
+
+main .division {
+    width: 45px;
+    height: 587px;
+    background-color: rgb(255, 0, 60);
+    margin: 0px -13px 11px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: inset -1px 0px 20px 0px black;
+}
+
+
+
+.division .division1 {
+    width: 41px;
+    height: 54px;
+    background-color: rgb(193 7 51);
+    border-radius: 9px;
+    box-shadow: inset 0px -1px 2px 1px #0000002e;
+    border-top: 2px solid #00000045;
+    border-bottom: 2px solid #0000003b;
+}
+
+.division .linea {
+    width: 10px;
+    height: 440px;
+    background-color: rgba(255, 255, 255, 0.404);
+}
+
+/* BOTONES */
+div#cross {
+    width: 90px;
+    height: 90px;
+
+    position: relative;
+}
+
+div#topcross {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    cursor: pointer;
+
+    position: absolute;
+    top: 0;
+    left: 30px;
+
+    box-shadow: 3px 2px 0px 0px #010101;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+div#topcross:active div#upT {
+    border-bottom: 10px solid #9b9d6e;
+}
+
+div#leftcross {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    z-index: 1;
+    cursor: pointer;
+
+    position: absolute;
+    left: 0;
+    top: 30px;
+
+    box-shadow: 0px 4px 0px -2px #010101,
+        1px 6px 0px -2px #010101,
+        2px 7px 0px -2px #010101;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+div#leftcross:active div#leftT {
+    border-right: 10px solid #9b9d6e;
+}
+
+div#midcross {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    box-shadow: -3px 2px #010101;
+    -webkit-box-shadow: -3px 2px #010101;
+    -moz-box-shadow: -3px 2px #010101;
+    -o-box-shadow: -3px 2px #010101;
+}
+
+div#rightcross {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    box-shadow: 1px 3px 0 2px #010101;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div#rightcross:active div#rightT {
+    border-left: 10px solid #9b9d6e;
+}
+
+div#botcross {
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+
+    box-shadow: 2px 3px #010101, 3px 4px #010101;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div#botcross:active div#downT {
+    border-top: 10px solid #9b9d6e;
+}
+
+#arrows-container {
+    display: flex;
+}
+
+div#upT {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+
+div#downT {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(255, 255, 255);
+
+    position: absolute;
+    bottom: 5px;
+    left: 6px;
+}
+
+div#leftT {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid rgb(255, 255, 255);
+    border-bottom: 10px solid transparent;
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+div#rightT {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid rgb(255, 255, 255);
+    border-bottom: 10px solid transparent;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+div#midCircle {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+
+    background: radial-gradient(#111, #222);
+    background: -webkit-radial-gradient(#111, #222);
+    background: -moz-radial-gradient(#111, #222);
+    background: -o-radial-gradient(#111, #222);
+}
+
+
+
+/* CARA 2 */
+
+main .cara2 {
+    width: 384px;
+    height: 573px;
+    margin: 0 0 18px 13px;
+    border-radius: 3px 32px 23px 14px;
+    background-color: rgb(255, 0, 60);
+    border: 3px solid black;
+    box-shadow: 1px 5px 1px 0px #4f1414;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    padding: 25px 17px 25px 17px;
+    justify-content: space-between;
+}
+
+.cara2 .screen2 {
+    width: 326px;
+    height: 240px;
+    border: 2px solid black;
+    background-color: rgb(26, 26, 26);
+    border-radius: 10%;
+    box-shadow: inset 2px -1px 20px 4px #000000;
+    padding: 10px;
+    display: flex;
+    /* background-color: rgb(37, 207, 21); */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    margin: 0 12px 0;
+}
+
+.screen2 #namePokemon {
+    color: rgb(45, 20, 187);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.screen2 #idPokemon {
+    font-size: 19px;
+    color: #9e0585;
+
+}
+
+.cara2 .btnsAzules{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 17px 0;
+}
+
+.btnsAzules div{
+    width: 55px;
+    height: 44px;
+    border-radius: 5px;
+    margin: 3px;
+    background-color: #0048ff;
+    border: 1px solid rgb(24, 8, 131);
+    box-shadow: inset -6px -5px 8px 2px #222876;
+}
+
+.btnsAzules div:hover{
+    box-shadow:inset 0px -1px 4px 2px #0d1c5e;
+}
+
+
+.cara2 .poderes{
+    display: flex;
+
+}
+.cara2 .poderes > p{
+    border: 2px solid rgb(0, 0, 0);
+    width: 130px;
+    height: 40px;
+    background-color: rgb(255, 255, 10);
+    margin: 0 14px  0;
+    text-align: center;
+    padding: 6px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* border-radius: 14px; */
+    text-shadow:1px 0px 0px #161010;
+    box-shadow: inset 2px 2px 3px black;
+}
+
+.screen2 .poke-stats > div{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+}
+
+.poke-stats div p::first-letter{
+    text-transform: uppercase;
+}
+
+.cara2 #btnsDobles2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btnsDobles2 #doblesAmarillo{
+    width: 50px;
+    height: 10px;
+    background-color: rgb(234, 255, 46);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 2px 3px 0px 1px rgb(29, 26, 68);
+    margin-right: 20px;
+
+}
+
+#btnsDobles2 #doblesAmarillo:hover {
+    box-shadow: inset 2px 3px 0px 1px rgb(19, 25, 77);
+}
+
+
+#btnsDobles2 #doblesVerde {
+    width: 50px;
+    height: 10px;
+    background-color: rgb(74, 255, 46);
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 2px 3px 0px 1px rgb(29, 26, 68);
+    margin-right: 20px;
+
+}
+
+#btnsDobles2 #doblesVerde:hover {
+    box-shadow: inset 2px 3px 0px 1px rgb(19, 25, 77);
+}
+
+.cara2 .cuadrosBtn{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.cuadrosBtn .cAmarillo{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 26px;
+    box-shadow: inset -1px -1px 4px 2px #4c4c22;
+}
+
+.cuadrosBtn .cuadros{
+    display: flex;
+    align-items: center;
+
+}
+
+.cuadros .cuadro{
+    width: 60px;
+    height: 30px;
+    background-color: rgb(118, 118, 118);
+    border: 1px solid black;
+    margin: 15px;
+    box-shadow: inset 2px 2px 3px black;
+}
