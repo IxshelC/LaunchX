@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Pokedex/CSS/style.css">
+    <script src="https://kit.fontawesome.com/159bd3f011.js" crossorigin="anonymous"></script>
+
+    <title>Pokedex</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="IMG/pngwing.com.png" alt="">
+        </div>
+
+    </header>
+
+    <main>
+
+        <section data-poke-card class="cara1">
+
+            <!-- CIRCULOS -->
+            <div class="circulos">
+                <div class="circulosCaja">
+                    <div id="cAzul">
+                        <div id="cAzul1"></div>
+                    </div>
+                    <div id="cRojo"></div>
+                    <div id="cAmarillo"></div>
+                    <div id="cVerde"> </div>
+                </div>
+                <div class="contenedorBlanco"></div>
+
+            </div>
+            </div>
+
+            <!-- PANTALLA DE POKEMON -->
+            <div class="pokemon">
+
+                <div id="btns">
+                    <div id="btnsRojos"></div>
+                    <div id="btnsRojos"></div>
+                </div>
+
+                <div data-screen1 id="screen">
+
+                    <div id="screenImg">
+                        <img data-pokemon-img id="imagen" src="../Pokedex/IMG/pokebola.png" alt="">
+                        <p data-pokemon-id id="idPokemon"></p>
+                    </div>
+                </div>
+
+                <div id="btns2">
+                    <div id="btn2Rojo"></div>
+
+                    <i class="fa-solid fa-align-justify"></i>
+
+                </div>
+            </div>
+
+            <div class="busqueda">
+                <div id="busquedaNombre">
+                    <form action="" onsubmit="buscarPokemon(event)" autocomplete="off">
+                        <input type="text" name="nombrePokemon" id="nombre" placeholder="Pokemon">
+                    </form>
+                </div>
+
+                <div id="btnsDobles">
+                    <div id="doblesAzul">
+                        <div id="puntoBlanco"></div>
+                    </div>
+                    <div id="doblesRojo">
+                        <div id="puntoNegro"></div>
+                    </div>
+                </div>
+
+                <div id="cross">
+                    <div id="leftcross" onclick="clickLeftRight()">
+                        <div id="leftT"></div>
+                    </div>
+                    <div id="topcross" onclick="clickUp()">
+                        <div id="upT"></div>
+                    </div>
+                    <div id="rightcross" onclick="clickLeftRight()">
+                        <div id="rightT"></div>
+                    </div>
+                    <div id="midcross">
+                        <div id="midCircle"></div>
+                    </div>
+                    <div id="botcross" onclick="clickBottom()">
+                        <div id="downT"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="division">
+            <div class="division1"></div>
+            <!-- <div class="linea"></div> -->
+            <div class="division1"></div>
+        </section>
+
+        <!-- CARA 2 -->
+        <section data-pokecard2 class="cara2">
+            <div data-screen2 class="screen2">
+                <p data-pokemon-nombre id="namePokemon"></p>
+                <div id="tipoPokemon"></div>
+                <div data-pokemon-status class="poke-stats"></div>
+            </div>
+            <div class="btnsAzules">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div id="btnsDobles2">
+                <div id="doblesAmarillo"></div>
+                <div id="doblesVerde"></div>
+            </div>
+
+            <div class="cuadrosBtn">
+                <div class="cAmarillo"></div>
+                <div class="cuadros">
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                </div>
+
+            </div>
+
+            <div data-pokemon-types class="poderes">
+                <div id="poder1"></div>
+                <div id="poder2"></div>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="../Pokedex/JS/main.js"></script>
+
+</body>
+
+</html>

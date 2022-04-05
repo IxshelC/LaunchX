@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: C, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    /* background-image: url(../IMG/FondoPastel2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed; */
+
+    background-image: url(../IMG/Fondo1.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+}
+
+/** FUENTES ¨**/
+@font-face {
+    font-family: C;
+    src: url(../FONTS/CaviarDreams.ttf);
+
+}
+
+@font-face {
+    font-family: D;
+    src: url(../FONTS/Vintage_fair.ttf);
+}
+
+@font-face {
+    font-family: E;
+    src: url(../FONTS/Retrophilia.ttf);
+
+}
+
+
+
+/** HEADER **/
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-image: url(../IMG/Pastel.jpg);
+
+
+}
+
+/** NAV BARRA DE NAVEGACIÓN **/
+nav.barraNavegacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+/** DIV LOGO DEL PASTEL **/
+
+div.logo {
+    text-align: center;
+    position: relative;
+
+}
+
+/* Logo del pastel */
+#logo {
+    width: 15%;
+    /* Tamaño del logo del pastel*/
+}
+
+/** DIV BARRA DE MENÚ **/
+div.barraMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    box-shadow: 3px 4px 12px 1px #1d1716;
+}
+
+/* Links de barraMenu */
+div.barraMenu a {
+    color: rgb(123, 32, 32);
+    font-size: 25px;
+    padding: 15px;
+    text-decoration: none;
+    font-family: E;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*Efecto Hover de los links de barra de menú */
+div.barraMenu a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 0px 18px rgb(224, 235, 253);
+}
+
+/** DIV ICONOS **/
+.barraMenu div.iconos {
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* Imagenes de los Links de iconos*/
+.barraMenu div.iconos a>img {
+    width: 30px;
+
+}
+
+/** TITULO **/
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: #2383a9;
+    text-shadow: 2px 2px rgb(0, 51, 255);
+}
+
+/** TABLA DE PEDIDOS PENDIENTES */
+.Stock {
+    border: 2px solid rgb(29, 32, 50);
+    border-radius: 20px;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #fa61ed 0%, #1cf770 100%);
+    margin: 20px;
+
+}
+
+.Stock table {
+    display: flex;
+    justify-content: center;
+    border-collapse:collapse
+}
+
+
+.Stock #Cabecera {
+
+    padding: 22px;
+    font-weight: bolder;
+    color: tomato;
+    background-color: #0b4e69;
+    box-shadow: 2px 2px rgb(239, 218, 218);
+    text-transform: uppercase;
+
+
+}
+
+.Stock td {
+    padding: 20px;
+    border: 2px solid rgb(0, 255, 238);
+    text-align: center;
+    color: #1d1716;
+    font-size: 22px;
+}
+
+.Stock td input{
+    width: 40px;
+    height: 30px;
+}
+

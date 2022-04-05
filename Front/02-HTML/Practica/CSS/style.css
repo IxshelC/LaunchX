@@ -1,0 +1,490 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: C, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    /* background-image: url(../IMG/FondoPastel2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed; */
+
+    background-image: url(../IMG/Fondo1.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+}
+
+/** FUENTES ¨**/
+
+
+
+
+@font-face {
+    font-family: C;
+    src: url(../FONTS/CaviarDreams.ttf);
+
+}
+
+@font-face {
+    font-family: D;
+    src: url(../FONTS/Vintage_fair.ttf);
+}
+
+@font-face {
+    font-family: E;
+    src: url(../FONTS/Retrophilia.ttf);
+
+}
+
+
+
+/** HEADER **/
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-image: url(../IMG/Pastel.jpg);
+
+
+}
+
+/** NAV BARRA DE NAVEGACIÓN **/
+nav.barraNavegacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/** DIV LOGO DEL PASTEL **/
+
+div.logo {
+    text-align: center;
+    position: relative;
+}
+
+/* Logo del pastel */
+#logo {
+    width: 15%;
+    /* Tamaño del logo del pastel*/
+}
+
+
+
+
+/** DIV BARRA DE MENÚ **/
+div.barraMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    box-shadow: 3px 4px 12px 1px #1d1716;
+}
+
+/* Links de barraMenu */
+div.barraMenu a {
+    color: rgb(123, 32, 32);
+    font-size: 25px;
+    padding: 15px;
+    text-decoration: none;
+    font-family: E;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*Efecto Hover de los links de barra de menú */
+div.barraMenu a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 0px 18px rgb(224, 235, 253);
+}
+
+/** DIV ICONOS **/
+.barraMenu div.iconos {
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* Imagenes de los Links de iconos*/
+.barraMenu div.iconos a>img {
+    width: 30px;
+
+}
+
+/**
+* ? MAIN
+*/
+
+
+/** SECCION DE BIENVENIDA CON LA IMAGEN DEL PASTEL **/
+
+/* BienvenidaImagen */
+.BienvenidaImagen {
+
+    display: flex;
+    margin: 25px;
+}
+
+
+/** Seccion de bienvenida con boton e imagen **/
+
+/* Seccion de bienvenida */
+section.bienvenida {
+
+    background-color: #820d0d00;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+/*Boton*/
+section.bienvenida a #boton {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    background-color: #2a90c7d5;
+    border: 3px solid rgba(240, 218, 223, 0.982);
+    border-radius: 35px;
+    padding: 25px;
+    text-transform: uppercase;
+    font-family: D;
+
+}
+
+/*Efecto Hover del boton */
+section.bienvenida a #boton:hover {
+    box-shadow: 0px 2px 13px 14px rgb(132, 130, 165);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+/*Titulo Principal */
+section.bienvenida #titulo {
+    color: rgb(128, 26, 106);
+    font-size: 40px;
+    font-family: C;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 2px 2px 2px rgba(8, 2, 21, 0.974);
+    margin-bottom: 15px;
+}
+
+/*Título H3 */
+section.bienvenida #titulo2 {
+    color: tomato;
+    font-size: 30px;
+}
+
+
+/** SECCION DE LA IMAGEN DEL PASTEL */
+section.imagen {
+    text-align: center;
+}
+
+/* Efecto hover para la imagen del pastel */
+section.imagen img:hover {
+    box-shadow: 0px 2px 13px 6px rgb(249 163 214);
+}
+
+/*Imagen del pastel */
+/** Secction2 .imagen **/
+section.imagen img {
+    width: 58%;
+    border-radius: 76px;
+
+}
+
+/** BLOQUE DIVISOR MENU**/
+/* Bloque divisor */
+main div.bloque {
+    width: 98%;
+    height: 70px;
+    background-image: linear-gradient(102.4deg, rgba(253, 189, 85, 1) 7.8%, rgba(249, 131, 255, 1) 100.3%);
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 12px 1px #1d1716;
+}
+
+
+/*Título de menú */
+h2#TituloMenu {
+    text-align: center;
+    color: rgb(103, 103, 27);
+    font-size: 50px;
+    text-shadow: 2px 2px white;
+
+}
+
+/** SECCIÓN DE MENU **/
+section.Menu {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 430px;
+
+}
+
+.Menu #caja1 img {
+    width: 80%;
+    border-radius: 76px;
+
+}
+
+/* Efecto hover para la imagen del pastel de la CAJA */
+.Menu #caja1 img:hover {
+    box-shadow: 0px 2px 13px 6px rgb(155, 122, 81);
+}
+
+/** TABLAS **/
+
+/* Tabla - Fondo */
+.Menu #Tabla {
+    background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgba(255, 206, 134, 1) 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
+    border-collapse: collapse;
+    font-weight: bold;
+    color: rgb(255, 47, 0);
+    margin: 10px;
+
+
+}
+
+/* COLUMNAS TR */
+#Tabla #titulos {
+    background-color: #eaa050;
+    /* border: 2px solid red; */
+}
+
+/* Cabecera de primera Fila TH*/
+#Tabla th {
+    color: rgb(255, 221, 254);
+    padding: 20px;
+    font-size: 19px;
+    border-collapse: collapse;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(19, 10, 10);
+
+    /* background-color: rgb(206, 25, 25); */
+}
+
+
+/* Lista de pasteles LI */
+#Tabla li {
+    /* background-color: #1d1716; */
+    padding: 10px;
+    border-bottom: 1px solid rgb(146, 25, 171);
+    list-style: none;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+
+
+/** BLOQUE DIVISOR ADORNOS**/
+/* Bloque divisor */
+main div.bloque2 {
+    width: 98%;
+    height: 70px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 12px 1px #1d1716;
+}
+
+/*Título de ADORNOS */
+h2#TituloAdornos {
+    text-align: center;
+    color: rgb(45, 7, 106);
+    font-size: 50px;
+    text-shadow: 2px 2px white;
+
+}
+
+
+/*** CONTENEDOR DE CARTAS **/
+.container{
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin :auto;
+
+}
+
+/* carta*/
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow:  6px 4px 15px 6px rgb(67 55 55 / 51%);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+
+}
+
+/* Efecto Hover en la carta*/
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow:  6px 4px 15px 6px rgba(92, 95, 99, 0.934);
+}
+
+/* Tamaño de la imagen dentro del contenedor*/
+.container .card img{
+    width: 339;
+    height: 220px;
+}
+
+/* Título del Adorno */
+.container .card h4{
+    margin: 5px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #de0000;
+}
+
+/* Información del adorno p*/
+.container .card p{
+    padding: 0 1rem;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+    color: #134877;
+}
+
+.container .card span{
+    color:blue;
+
+}
+
+/* Link de Comprar a */
+.container .card a{
+    font-weight: bolder;
+    text-decoration: none;
+    color:#cb601d;
+
+
+}
+
+
+/** BLOQUE DIVISOR PASTELES**/
+/* Bloque divisor */
+main div.bloque3 {
+    width: 98%;
+    height: 70px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 12px 1px #1d1716;
+    background-image: linear-gradient(to right, #9c71cb, #8381db, #6690e6, #439deb, #12a9eb);
+}
+
+/*Título de PASTELES */
+h2#TituloPasteles {
+    text-align: center;
+    color: rgb(237, 226, 255);
+    font-size: 50px;
+    text-shadow: 2px 2px rgb(91, 61, 91);
+
+}
+
+
+/** CONTENEDOR DE PASTELES **/
+
+.containerP{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+/* carta de pastel */
+.containerP .cardP{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    border-radius: 8px;
+    box-shadow:  6px 4px 15px 6px rgb(67 55 55 / 51%);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-image: linear-gradient(to top, #6869d5 0%, #fef9d7 100%);
+
+}
+
+/* Efecto Hover en la carta */
+.containerP .cardP:hover{
+    transform: translateY(-15px);
+    box-shadow:  6px 4px 15px 6px rgba(39, 156, 156, 0.934);
+}
+
+/* Tamaño de la imagen dentro del contenedor */
+.containerP .cardP img{
+    width: 339;
+    height: 220px;
+
+}
+
+/* Título del pastel */
+.containerP .cardP h4{
+    margin: 5px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #481421;
+}
+
+/* Información del Pastel p*/
+.containerP .cardP p{
+    padding: 0 1rem;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+    color: #7c178c;
+}
+
+.containerP .cardP span{
+    color:rgb(217, 255, 0);
+
+}
+
+/* Link de Comprar a */
+.containerP .cardP a{
+    font-weight: bolder;
+    text-decoration: none;
+    color:#e62012;
+
+
+}
+
+
+/** FOOTER **/
+
+footer {
+    position: relative;
+}
+
+footer .footerdiv{
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+}
+
+.footerdiv p{
+    color: #0e455c;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}

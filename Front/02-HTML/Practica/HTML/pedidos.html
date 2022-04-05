@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../IMG/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style1.css">
+    <title>Pedidos</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="barraNavegacion">
+
+            <!--LOGOTIPO-->
+            <div class="logo">
+                <img id="logo" src="../IMG/LogoPasteleria.png" alt="">
+            </div>
+
+            <!-- LINKS DE LA BARRA DE NAVEGACIÓN-->
+            <div class="barraMenu">
+
+                <a href="pasteleria.html">Inicio</a>
+
+
+                <div class="iconos">
+                    <a href="#"><img src="../IMG/carrito.png" alt=""></a>
+                    <a href="pastelero.html"><img src="../IMG/usuario.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>PEDIDO</h1>
+
+        <section class="pedido">
+            <form action="">
+                <fieldset>
+                    <legend>Pedido #000</legend>
+
+                    <!-- NOMBRE DEL PASTEL -->
+                    <label for="">Pasteles</label>
+
+                    <!-- PASTELES -->
+                    <section>
+                        <div class="containerP">
+                            <!-- Pastel 1 -->
+                            <div class="cardP">
+                                <h4>Moka</h4>
+                                <img src="../IMG/Pasteles/PMoka.png" alt="" srcset=""><br>
+                                <input type="radio" name="pastel" id="moka" value="moka">
+                            </div>
+
+                            <!-- Pastel 2 -->
+                            <div class="cardP">
+                                <h4>Oreo</h4>
+                                <img src="../IMG/Pasteles/POreo.png" alt="" srcset=""><br>
+                                <input type="radio" name="pastel" id="Oreo" value="Oreo">
+                            </div>
+
+
+                            <!-- Pastel 3 -->
+                            <div class="cardP  ">
+                                <h4>Fresa</h4>
+                                <img src="../IMG/Pasteles/PFresa.png" alt="" srcset=""><br>
+                                <input type="radio" name="pastel" id="Fresa" value="Fresa">
+                            </div>
+
+                            <!-- Pastel 4 -->
+                            <div class="cardP">
+                                <h4>Frutos Rojos</h4>
+                                <img src="../IMG/Pasteles/PFrutos.png" alt="" srcset=""><br>
+                                <input type="radio" name="pastel" id="Frutos" value="Frutos">
+                            </div>
+
+                            <!-- Pastel 5 -->
+                            <div class="cardP">
+                                <h4>Trufa</h4>
+                                <img src="../IMG/Pasteles/PTrufa.png" alt="" srcset=""><br>
+                                <input type="radio" name="pastel" id="Trufa" value="Trufa">
+                            </div>
+
+                            <!-- Pastel 6 -->
+                            <div class="cardP">
+                                <h4>Durazno</h4>
+                                <img src="../IMG/Pasteles/PDurazno.png" alt="" srcset=""><br>
+                                <input type="radio" name="pastel" id="Durazno" value="Durazno">
+                            </div>
+
+                            <!-- Pastel 7 -->
+                            <div class="cardP">
+                                <h4>Marmoleado</h4>
+                                <img src="../IMG/Pasteles/PMarmoleado.png" alt="" srcset=""><br>
+                                <input type="radio" name="pastel" id="Marmoleado" value="Marmoleado">
+                            </div>
+
+                        </div>
+
+
+                    </section>
+
+                    <h2 id="titulo">CREA TU PASTEL</h2> <br>
+                    <label for="">Ingrese el nombre de su pastel aquí:</label>
+                    <input type="text" name="sabores" id="nombrePastel"> <br><br>
+
+                    <!-- NOMBRE DEL PAN -->
+                    <label for="">Pan</label>
+
+                    <!-- PANES -->
+                    <section>
+                        <div class="containerPan">
+                            <!-- Pastel 1 -->
+                            <div class="cardPan">
+                                <h4>Pan de Molde</h4>
+                                <p>Hecho con arina de trigo, enriquecido en leche.</p>
+                                <input type="radio" name="pan" id="moka" value="moka">
+                            </div>
+
+                            <!-- Pastel 2 -->
+                            <div class="cardPan">
+                                <h4>Pan Integral</h4>
+                                <p>Hecho con arinas integrales.</p>
+                                <input type="radio" name="pan" id="Oreo" value="Oreo">
+                            </div>
+
+
+                            <!-- Pastel 3 -->
+                            <div class="cardPan  ">
+                                <h4>Pan Centeno</h4>
+                                <p>Sabor más amargo y textura más dura</p>
+                                <input type="radio" name="pan" id="Fresa" value="Fresa">
+                            </div>
+
+                            <!-- Pastel 4 -->
+                            <div class="cardPan">
+                                <h4>Pan de maíz</h4>
+                                <p>No contiene gluten</p>
+                                <input type="radio" name="pan" id="Frutos" value="Frutos">
+                            </div>
+
+                            <!-- Pastel 5 -->
+                            <div class="cardPan">
+                                <h4>Envinado</h4>
+                                <p>Licor: <select name="licores" id="licores">
+                                        <option value="Brandy">Brandy</option>
+                                        <option value="Avellana">Avellana</option>
+                                        <option value="Malibu">Malibu</option>
+                                        <option value="Amareto">Amareto</option>
+                                        <option value="Anis">Anis</option>
+                                    </select></p>
+                                <input type="checkbox" name="pan" id="Trufa" value="Trufa">
+                            </div>
+
+                            <!-- Pastel 6 -->
+                            <div class="cardPan" id="c">
+                                <h4>Chocolate</h4>
+                                <input type="checkbox" name="pastel" id="Durazno" value="Durazno">
+                            </div>
+
+                            <!-- Pastel 7 -->
+                            <div class="cardPan" id="fresa">
+                                <h4>Fresa</h4>
+                                <input type="checkbox" name="pastel" id="Marmoleado" value="Marmoleado">
+                            </div>
+
+                            <div class="cardPan" id="vainilla">
+                                <h4>Vainilla</h4>
+                                <input type="checkbox" name="pastel" id="Marmoleado" value="Marmoleado">
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+
+                    <!-- SABORES -->
+                    <label for="">Sabores</label> <br><br>
+
+                    <section>
+                        <div class="containerSabores">
+                            <!-- Sabor 1 -->
+                            <div class="cardSabores">
+                                <h4>Café</h4>
+                                <input type="radio" name="" id="" value="">
+                            </div>
+
+                            <!--Sabor 2 -->
+                            <div class="cardSabores">
+                                <h4>Café con chocolate</h4>
+                                <input type="radio" name="" id="" value="">
+                            </div>
+
+
+                            <!--Sabor 3 -->
+                            <div class="cardSabores  ">
+                                <h4>Malteada de fresa</h4>
+                                <input type="radio" name="sabores" id="" value="">
+                            </div>
+
+                            <!--Sabor 4 -->
+                            <div class="cardSabores">
+                                <h4>Durazno con naranja</h4>
+                                <input type="radio" name="sabores" id="" value="">
+                            </div>
+
+                            <!--Sabor 5 -->
+                            <div class="cardSabores">
+                                <h4>Frutos rojos</h4>
+                                <input type="radio" name="sabores" id="" value="">
+                            </div>
+
+                            <!--Sabor 6 -->
+                            <div class="cardSabores">
+                                <h4>Chocolate</h4>
+                                <input type="radio" name="sabores" id="" value="">
+                            </div>
+
+                            <!--Sabor 7 -->
+                            <div class="cardSabores">
+                                <h4>Malteada de chocolate</h4>
+                                <input type="radio" name="sabores" id="" value="">
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+
+                    <!-- ADORNOS -->
+                    <label for="">Adornos</label> <br><br>
+
+                    <section>
+                        <div class="containerAdornos">
+                            <!-- Sabor 1 -->
+                            <div class="cardAdornos">
+                                <h4>Boda</h4>
+                                <input type="radio" name="Adornos" id="Boda1" value="">
+                            </div>
+
+                            <!--Sabor 2 -->
+                            <div class="cardAdornos">
+                                <h4>Boda 2</h4>
+                                <input type="radio" name="Adornos" id="Boda2" value="">
+                            </div>
+
+
+                            <!--Sabor 3 -->
+                            <div class="cardAdornos ">
+                                <h4>Letrero</h4>
+                                <input type="radio" name="Adornos" id="Letrero" value="">
+                            </div>
+
+                            <!--Sabor 4 -->
+                            <div class="cardAdornos">
+                                <h4>Vela Explosiva</h4>
+                                <input type="radio" name="Adornos" id="VelaExplosiva" value="">
+                            </div>
+
+                            <!--Sabor 5 -->
+                            <div class="cardAdornos">
+                                <h4>Vela Mickey</h4>
+                                <input type="radio" name="Adornos" id="VelaMickey" value="">
+                            </div>
+
+                            <!--Sabor 6 -->
+                            <div class="cardAdornos">
+                                <h4>Vela Mimi</h4>
+                                <input type="radio" name="Adornos" id="velaMimi" value="">
+                            </div>
+
+
+
+                        </div>
+
+
+                    </section>
+
+
+
+
+
+                </fieldset>
+            </form>
+
+        </section>
+
+        <section class="direccion">
+            <form action="">
+                <fieldset>
+
+                    <legend>Dirección</legend>
+
+                    <label for="">Nombre:</label>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" required>
+
+                    <label for="">Teléfono:</label>
+                    <input type="tel" name="Teléfono" id="Tel" placeholder="+52 550000" required>
+
+                    <label for="">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Correo@email.com" required>
+
+                    <br><br><label for="Direccion">Dirección:</label>
+                    <input type="Direccion" placeholder="Calle" required>
+
+                    <label for="">Número Exterior:</label>
+                    <input type="number" name="" id="numExterior" required>
+
+                    <label for="">Número Interior: </label>
+                    <input type="number" name="" id="numInterior"><br><br>
+
+                    <label for="">Delegación:</label>
+                    <input type="text" name="" id="del" required><br><br>
+
+
+
+
+                </fieldset>
+
+                <div class="botones">
+                    <input type="reset" value="Restablecer">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footerdiv">
+            <p>Ubicación: C. Economía 98, Federal, Venustiano Carranza, 15700 Ciudad de México, CDMX</p>
+            <p>Teléfonos: 55-77-88-99-51 || 56-69-52-11 || 55-31-69-89</p>
+            <p>Horarios de atención: Lunes - Viernes 7:00am - 11:00pm || Sábado - Domingo 24hras
+            </p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

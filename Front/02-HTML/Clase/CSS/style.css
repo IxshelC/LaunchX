@@ -1,0 +1,37 @@
+#logo{
+    margin:auto;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+}
+
+#titulo1{
+    color: rgb(24, 84, 163);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#titulo{
+    text-align: center;
+    padding: 15px;
+    color: blueviolet;
+}
+
+#menu{
+    color: red;
+    text-align: center;
+    padding: 15px;
+}
+#tacos{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    width: 400px;
+    margin:auto
+}
+
+#tablaTacos, th,td{
+    border: 2px solid rgb(28, 17, 17);
+    color: blue;
+}
